@@ -9,19 +9,20 @@ def map(array)
   new_array
 end
 
+
 def reduce(source_array, starting_point = nil)
-  i = 0
-  x = starting_point
+  if starting_point
+    reduction = starting_point
+    i = 0
+  else
+    reduction = source_array[0]
+    i = 1
+  end
   
   while i < source_array.length do
-
-
-    x = x + source_array[i]
-    i += 1
+   reduction = yield(reduction, source_array[i])
+   i += 1
   end
-  return x
+  return reduction
 end
 
-if starting_point != nil 
-  
-end
