@@ -20,4 +20,5 @@ def reduce(source_array, starting_point = nil)
   return x
 end
 
-if starting_point = 
+if starting_point == nil 
+end
