@@ -25,4 +25,3 @@ def reduce(source_array, starting_point = nil)
   end
   return reduction
 end
-
