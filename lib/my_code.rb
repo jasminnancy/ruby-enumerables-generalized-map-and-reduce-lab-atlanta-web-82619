@@ -1,3 +1,4 @@
 def map(array) {
-  yield 
+  i = 0
+  
 }
